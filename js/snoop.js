@@ -52,7 +52,6 @@ let cloud2AnimationX = cloud2.animate([
  { transform: 'translateX(95%)' }
 ], cloudAnimationXOptions);
 
-
 // eyes animations
 let hideEyesKeyframes = [
   { opacity: '1' },
@@ -62,7 +61,6 @@ let showEyesKeyframes = [
   { opacity: '0' },
   { opacity: '1' }
 ];
-
 let eyesAnimationOptions = {
   duration: 500,
   fill: 'forwards'
@@ -84,10 +82,10 @@ function snoopSleepingAnimation() {
   awakeEyes.animate(hideEyesKeyframes, eyesAnimationOptions);
   sleepyEyes.animate(showEyesKeyframes, eyesAnimationOptions);
   snoopTailAnimation.pause();
-};
+}
 
 function snoopWakeupAnimation() {
   sleepyEyes.animate(hideEyesKeyframes, eyesAnimationOptions);
   awakeEyes.animate(showEyesKeyframes, eyesAnimationOptions);
   snoopTailAnimation.play();
-};
+}
