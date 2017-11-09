@@ -43,5 +43,108 @@
         box-shadow: 0px 0px 0px 1px rgba(0,0,0,.2);
       }
     </style>
+
+    <section id="dog" class="stage">
+      <div id="dog--sky" class="stage--sky">
+        <div id="cloud1" class="sky--clouds"></div>
+        <div id="cloud2" class="sky--clouds"></div>
+      </div>
+
+      <div class="animal">
+        <div class="shadown"></div>
+      </div>
+
+      <div id="dog-floor" class="stage--floor">
+        <div class="stone1 floor--stones">
+          <div class="layer"></div>
+        </div>
+        <div class="stone2 floor--stones">
+          <div class="layer"></div>
+        </div>
+        <div class="stone3 floor--stones">
+          <div class="layer"></div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
+
+<style>
+  html {
+    font-family: SF Optimized, system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  }
+
+  .stage {
+    width: 375px;
+    height: 667px;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+
+  .stage--sky {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .stage--floor {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+  }
+
+  .floor--stones {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 100%;
+  }
+
+  .floor--stones .layer {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;     
+  }
+
+  /* dog */
+  #dog--sky {
+    background-color: #692C8C;
+  }
+
+  #dog-floor {
+    background-color: #83579D;
+  }
+
+  #dog-floor .floor--stones {
+    background-color: #622E80;
+  }
+  
+  #dog-floor .floor--stones .layer {
+    background-color: #83579D;  
+  }
+
+  #dog-floor .stone1 {
+    right: 55%;
+    bottom: 91%;
+    background-color: #83579D;    
+  }
+
+  #dog-floor .stone2 {
+    right: 20%;
+    bottom: 82%;
+  }
+
+  #dog-floor .stone3 {
+    right: 75%;
+    bottom: 75%;
+    width: 30px;
+    height: 30px;
+  }
+
+</style>
