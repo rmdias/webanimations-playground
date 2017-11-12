@@ -1,0 +1,33 @@
+#dog--sky {
+  background-color: #692C8C;
+}
+
+#dog-floor {
+  background-color: #83579D;
+}
+
+#dog-floor .floor--stones {
+  background-color: #622E80;
+}
+
+#dog-floor .floor--stones .layer {
+  background-color: #83579D;  
+}
+
+#dog-floor .stone1 {
+  right: 55%;
+  bottom: 91%;
+  background-color: #83579D;
+}
+
+#dog-floor .stone2 {
+  right: 20%;
+  bottom: 82%;
+}
+
+#dog-floor .stone3 {
+  right: 75%;
+  bottom: 75%;
+  width: 30px;
+  height: 30px;
+}
