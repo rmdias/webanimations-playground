@@ -1,0 +1,13 @@
+#fish--sky {
+  background: #C8F9FE;
+}
+
+#fish-sea {
+  background-color: #5DD1FA;
+  height: 80%;
+}
+
+.sea--waves {
+  width: 100%;
+  position: absolute;
+}

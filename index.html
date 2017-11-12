@@ -14,115 +14,96 @@
   <link rel="stylesheet" href="./styles/stages/fish.css">
 </head>
 <body>
-    <nav class="nav-animals-animations">
-      <ul class="nav-animals-animations--items">
-        <li class="nav-animals-animations--item">
-          <a href="#" class="nav-animals-animations--link dog-link">Dog</a>
-        </li>
-        <li class="nav-animals-animations--item">
-          <a href="#" class="nav-animals-animations--link cat-link">Cat</a>
-        </li>
-        <li class="nav-animals-animations--item">
-          <a href="#" class="nav-animals-animations--link fish-link">Fish</a>
-        </li>
-      </ul>
-    </nav>
+  <nav class="nav-animals-animations">
+    <ul class="nav-animals-animations--items">
+      <li class="nav-animals-animations--item">
+        <a href="#" class="nav-animals-animations--link dog-link">Dog</a>
+      </li>
+      <li class="nav-animals-animations--item">
+        <a href="#" class="nav-animals-animations--link cat-link">Cat</a>
+      </li>
+      <li class="nav-animals-animations--item">
+        <a href="#" class="nav-animals-animations--link fish-link">Fish</a>
+      </li>
+    </ul>
+  </nav>
 
-    <section id="dog" class="stage">
-      <div id="dog--sky" class="stage--sky">
-        <div id="cloud1" class="sky--clouds"></div>
-        <div id="cloud2" class="sky--clouds"></div>
+  <section id="dog" class="stage">
+    <div id="dog--sky" class="stage--sky">
+      <div id="cloud1" class="sky--clouds"></div>
+      <div id="cloud2" class="sky--clouds"></div>
+    </div>
+
+    <div class="animal">
+      <div class="shadown"></div>
+    </div>
+
+    <div id="dog-floor" class="stage--floor">
+      <div class="stone1 floor--stones">
+        <div class="layer"></div>
+      </div>
+      <div class="stone2 floor--stones">
+        <div class="layer"></div>
+      </div>
+      <div class="stone3 floor--stones">
+        <div class="layer"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cat" class="stage">
+    <div id="cat--sky" class="stage--sky">
+      <div id="cloud1" class="sky--clouds"></div>
+      <div id="cloud2" class="sky--clouds"></div>
+    </div>
+
+    <div class="animal">
+      <div class="shadown"></div>
+    </div>
+
+    <div id="cat-floor" class="stage--floor">
+      <div class="stone1 floor--stones">
+        <div class="layer"></div>
+      </div>
+      <div class="stone2 floor--stones">
+        <div class="layer"></div>
+      </div>
+      <div class="stone3 floor--stones">
+        <div class="layer"></div>
+      </div>
+      <div class="stone4 floor--stones">
+        <div class="layer"></div>
+      </div>
+      <div class="stone5 floor--stones">
+        <div class="layer"></div>
+      </div>
+      <div class="stone6 floor--stones">
+        <div class="layer"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fish" class="stage">
+    <div id="fish--sky" class="stage--sky">
+      <div id="cloud1" class="sky--clouds"></div>
+      <div id="cloud2" class="sky--clouds"></div>
+    </div>
+
+    <div class="animal">
+      <div class="shadown"></div>
+    </div>
+
+    <div id="fish-sea" class="stage--sea stage--floor">
+      <div id="wave1" class="sea--waves"></div>
+      <div id="wave2" class="sea--waves"></div>
+      <div id="wave3" class="sea--waves"></div>
+
+      <div class="fishe1 sea--fishes">
       </div>
 
-      <div class="animal">
-        <div class="shadown"></div>
+      <div class="fishe2 sea--fishes">
       </div>
-
-      <div id="dog-floor" class="stage--floor">
-        <div class="stone1 floor--stones">
-          <div class="layer"></div>
-        </div>
-        <div class="stone2 floor--stones">
-          <div class="layer"></div>
-        </div>
-        <div class="stone3 floor--stones">
-          <div class="layer"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="cat" class="stage">
-      <div id="cat--sky" class="stage--sky">
-        <div id="cloud1" class="sky--clouds"></div>
-        <div id="cloud2" class="sky--clouds"></div>
-      </div>
-  
-      <div class="animal">
-        <div class="shadown"></div>
-      </div>
-  
-      <div id="cat-floor" class="stage--floor">
-        <div class="stone1 floor--stones">
-          <div class="layer"></div>
-        </div>
-        <div class="stone2 floor--stones">
-          <div class="layer"></div>
-        </div>
-        <div class="stone3 floor--stones">
-          <div class="layer"></div>
-        </div>
-        <div class="stone4 floor--stones">
-          <div class="layer"></div>
-        </div>
-        <div class="stone5 floor--stones">
-          <div class="layer"></div>
-        </div>
-        <div class="stone6 floor--stones">
-          <div class="layer"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="fish" class="stage">
-      <div id="fish--sky" class="stage--sky">
-        <div id="cloud1" class="sky--clouds"></div>
-        <div id="cloud2" class="sky--clouds"></div>
-      </div>
-  
-      <div class="animal">
-        <div class="shadown"></div>
-      </div>
-  
-      <div id="fish-sea" class="stage--sea stage--floor">
-        <div id="wave1" class="sea--waves"></div>
-        <div id="wave2" class="sea--waves"></div>
-        <div id="wave3" class="sea--waves"></div>
-  
-        <div class="fishe1 sea--fishes">
-        </div>
-  
-        <div class="fishe2 sea--fishes">
-        </div>
-      </div>
-    </section>
-    
+    </div>
+  </section>
 </body>
 </html>
-
-<style>
-
-  #fish--sky {
-    background: #C8F9FE;
-  }
-
-  #fish-sea {
-    background-color: #5DD1FA;
-    height: 80%;
-  }
-
-  .sea--waves {
-    width: 100%;
-    position: absolute;    
-  }
-
-</style>
