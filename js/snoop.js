@@ -14,7 +14,39 @@ let sleepyEyes = document.querySelector('#sleepy-eyes');
 let awakeEyes = document.querySelector('#awake-eyes');
 
 let snoopSleepBtn = document.querySelector('#dog-sleep');
-
+let snoopWakeupBtn = document.querySelector('#dog-wakeup');
 
 snoopSleepBtn.addEventListener('click', snoopSleepingAnimation);
+snoopWakeupBtn.addEventListener('click', snoopWakeupAnimation);
 
+function snoopSleepingAnimation() {
+  if (isSnoopAwake()) {
+    sleepyEyes.animate(AnimationsKeyframes.wakeupKeyframes, {
+      duration: 500,
+      fill: 'forwards'
+    });
+
+    awakeEyes.animate(AnimationsKeyframes.sleepKeyframes, {
+      duration: 500,
+      fill: 'forwards',
+    });
+
+    snoopTailAnimation.pause();
+  }
+};
+
+function snoopWakeupAnimation() {
+  if (!isSnoopAwake()) {  
+    sleepyEyes.animate(AnimationsKeyframes.sleepKeyframes, {
+      duration: 500,
+      fill: 'forwards'
+    });
+
+    awakeEyes.animate(AnimationsKeyframes.wakeupKeyframes, {
+      duration: 500,
+      fill: 'forwards',
+    });
+    
+    snoopTailAnimation.play();
+  }
+};
