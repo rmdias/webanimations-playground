@@ -19,6 +19,32 @@ let snoopWakeupBtn = document.querySelector('#dog-wakeup');
 snoopSleepBtn.addEventListener('click', snoopSleepingAnimation);
 snoopWakeupBtn.addEventListener('click', snoopWakeupAnimation);
 
+// clouds
+let cloud1 = document.querySelector('#dog-cloud1');
+let cloud2 = document.querySelector('#dog-cloud2');
+
+let cloudAnimationX = cloud1.animate(AnimationsKeyframes.cloudXKeyframes,{
+  duration: 20000,
+  fill: 'forwards'
+});
+cloudAnimationX.onfinish = () => cloudAnimationX.reverse();
+
+let cloudAnimationY = cloud1.animate(AnimationsKeyframes.cloudYKeyframes, {
+  duration: 2000,
+  iterations: Infinity
+});
+
+let cloud2AnimationX = cloud2.animate(AnimationsKeyframes.cloud2XKeyframes,{
+  duration: 20000,
+  fill: 'forwards'
+});
+cloud2AnimationX.onfinish = () => cloud2AnimationX.reverse();
+
+
+function isSnoopAwake() {
+  return snoopTailAnimation.playState !== 'paused';
+}
+
 function snoopSleepingAnimation() {
   if (isSnoopAwake()) {
     sleepyEyes.animate(AnimationsKeyframes.wakeupKeyframes, {
