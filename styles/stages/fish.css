@@ -9,5 +9,44 @@
 
 .sea--waves {
   width: 100%;
+  height: 22px;
   position: absolute;
+}
+
+#wave1 {
+  background: url('../../svg/wave_layer_1.svg') repeat-x;
+  margin-top: -20px;
+  z-index: 4;
+  border-bottom: 13px solid #5DD1FA;
+}
+
+#wave2 {
+  background: url('../../svg/wave_layer_2.svg') repeat-x;
+  margin-top: -26px;
+  z-index: 2;
+  background-position-x: 7%;
+  border-bottom: 6px solid #C8F9FE;
+}
+
+#wave3 {
+  background: url('../../svg/wave_layer_3.svg') repeat-x;
+  margin-top: -40px;
+}
+
+.sea--fishes {
+  position: absolute;
+  transform-origin: left center;
+}
+
+.fish1 {
+  top: -35px;
+  left: 15px;
+  z-index: 3;
+  margin-left: -20%;
+}
+
+.fish2 {
+  top: -46px;
+  right: 15px;
+  margin-right: -20%;
 }
