@@ -16,8 +16,9 @@
 
 #dog .animal {
   z-index: 2;
-  position: absolute;
-  transform: translate(60px,240px);  
+  width: 150px;
+  position: relative;
+  margin: 240px auto 0 auto;
 }
 
 #tail {
