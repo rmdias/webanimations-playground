@@ -41,16 +41,14 @@ for (let index = 0; index < waves.length; index++) {
   const wave = waves[index];
   const waveDelay = getRandomDelay(-1000, 1000)
 
-  let wave1SeaYKeyframes = wave.animate(AnimationsKeyframes.FishKeyframes.seaYKeyframes, {
+  let seaYKeyframes = wave.animate(AnimationsKeyframes.FishKeyframes.seaYKeyframes, {
     duration: 3000,
     fill: 'forwards',
     iterations: Infinity,
     delay: waveDelay
   });
   
-  
-  
-  let wave1SeaXKeyframes = wave.animate(AnimationsKeyframes.FishKeyframes.seaXKeyframes, {
+  let seaXKeyframes = wave.animate(AnimationsKeyframes.FishKeyframes.seaXKeyframes, {
     duration: 3000,
     fill: 'forwards',
     iterations: Infinity,
