@@ -4,7 +4,7 @@
 
 #fish-sea {
   background-color: #5DD1FA;
-  height: 80%;
+  height: 65%;
 }
 
 .sea--waves {
@@ -49,4 +49,11 @@
   top: -46px;
   right: 15px;
   margin-right: -20%;
+}
+
+#fish .animal {
+  position: relative;
+  z-index: 4;
+  top: 65%;
+  text-align: center;
 }
