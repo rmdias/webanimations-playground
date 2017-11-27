@@ -14,7 +14,7 @@
 }
 
 #wave1 {
-  background: url('../../svg/wave_layer_1.svg') repeat-x;
+  background: url('../../svg/wave_layer_1.svg') repeat-x 0 1px;
   margin-top: -20px;
   z-index: 4;
   border-bottom: 13px solid #5DD1FA;
