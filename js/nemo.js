@@ -39,7 +39,7 @@ fish2SwimingXmoves.onfinish = () => {
 // random waves animation
 for (let index = 0; index < waves.length; index++) {
   const wave = waves[index];
-  const waveDelay = getRandomDelay(-1000, 1000)
+  const waveDelay = getRandomDelay(-1000, 1000);
 
   let seaYKeyframes = wave.animate(AnimationsKeyframes.FishKeyframes.seaYKeyframes, {
     duration: 3000,

@@ -25,9 +25,8 @@ let cloud2 = document.querySelector('#dog-cloud2');
 
 let cloudAnimationX = cloud1.animate(AnimationsKeyframes.cloudXKeyframes,{
   duration: 20000,
-  fill: 'forwards'
+  iterations: Infinity
 });
-cloudAnimationX.onfinish = () => cloudAnimationX.reverse();
 
 let cloudAnimationY = cloud1.animate(AnimationsKeyframes.cloudYKeyframes, {
   duration: 2000,
@@ -36,9 +35,8 @@ let cloudAnimationY = cloud1.animate(AnimationsKeyframes.cloudYKeyframes, {
 
 let cloud2AnimationX = cloud2.animate(AnimationsKeyframes.cloud2XKeyframes,{
   duration: 20000,
-  fill: 'forwards'
+  iterations: Infinity  
 });
-cloud2AnimationX.onfinish = () => cloud2AnimationX.reverse();
 
 
 function isSnoopAwake() {
