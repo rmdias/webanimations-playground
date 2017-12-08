@@ -11,6 +11,7 @@
 #dog-cloud2 {
   position: relative;
   top: 0;
+  transform: translateX(95%);
   padding-top: 80px;
 }
 

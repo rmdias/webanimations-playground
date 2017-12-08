@@ -14,7 +14,8 @@ const AnimationsKeyframes = {
   ],
   cloudXKeyframes: [
     {transform: 'translateX(0)'},
-    {transform: 'translateX(95%)'}
+    {transform: 'translateX(95%)'},
+    {transform: 'translateX(0)'}    
   ],
   cloudYKeyframes: [
     {marginTop: 0},
@@ -23,7 +24,8 @@ const AnimationsKeyframes = {
   ],
   cloud2XKeyframes: [
     {transform: 'translateX(95%)'},
-    {transform: 'translateX(0)'}
+    {transform: 'translateX(0)'},
+    {transform: 'translateX(95%)'}   
   ],
   FishKeyframes: {
     swimingYmoves: [
