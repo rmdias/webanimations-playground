@@ -4,105 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web Animaitons API <3</title>  
+  <title>Web Animations Playground ❤</title>  
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="./styles/app.css">
   <link rel="stylesheet" href="./styles/stages/stages.css">
-  <link rel="stylesheet" href="./styles/stages/dog.css">
-
-  <script src="./js/web-animations-next.min.js"></script>
-  
+  <link rel="stylesheet" href="./styles/stages/dog.css">  
 </head>
 <body>
-  <nav class="nav-animals-animations">
-    <ul class="nav-animals-animations--items">
-      <li class="nav-animals-animations--item">
-        <a href="#" id="dog-sleep" class="nav-animals-animations--link dog-link">Dog sleep</a>
-        <a href="#" id="dog-wakeup" class="nav-animals-animations--link dog-link">Dog wakeup</a>
-      </li>
-      <li class="nav-animals-animations--item">
-        <a href="./fish/" class="nav-animals-animations--link fish-link">Fish</a>
-      </li>
-    </ul>
-  </nav>
+  <header class="wap-header">
+    <h1 class="wap-logo">// WebAnimationsPlayground</h1>
+    <p class="wap-header--text">
+      Hey, this is made with ❤ by <a href="#">Rodolfo Dias</a> and <a href="#">Marcos Antônio</a>, and supported by the community :)
+    </p>
+  </header>
 
-  <section id="dog" class="stage">
-    <div id="dog--sky" class="stage--sky">
-      <div id="dog-cloud1" class="sky--clouds">
-        <svg width="140px" height="40px" viewBox="449 1244 140 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">>
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(449.000000, 1244.000000)">
-              <path d="M24.317,39.93 C24.317,17.93 42.151,0.1 64.15,0.1 C86.149,0.1 103.983,17.93 103.983,39.93" id="Fill-195" fill="#D1BEDC"></path>
-              <path d="M92.184,39.93 C92.184,26.77 102.854,16.1 116.017,16.1 C129.179,16.1 139.85,26.77 139.85,39.93" id="Fill-196" fill="#D1BEDC"></path>
-              <path d="M0.484,39.93 C0.484,26.77 11.155,16.1 24.317,16.1 C37.479,16.1 48.15,26.77 48.15,39.93" id="Fill-199" fill="#D1BEDC"></path>
-          </g>
-        </svg>
-      </div>
-      <div id="dog-cloud2" class="sky--clouds">
-          <svg width="140px" height="40px" viewBox="449 1244 140 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">>
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(449.000000, 1244.000000)">
-                <path d="M24.317,39.93 C24.317,17.93 42.151,0.1 64.15,0.1 C86.149,0.1 103.983,17.93 103.983,39.93" id="Fill-195" fill="#D1BEDC"></path>
-                <path d="M92.184,39.93 C92.184,26.77 102.854,16.1 116.017,16.1 C129.179,16.1 139.85,26.77 139.85,39.93" id="Fill-196" fill="#D1BEDC"></path>
-                <path d="M0.484,39.93 C0.484,26.77 11.155,16.1 24.317,16.1 C37.479,16.1 48.15,26.77 48.15,39.93" id="Fill-199" fill="#D1BEDC"></path>
-            </g>
-          </svg>
-      </div>
-    </div>
+  <div class="wap-main">
+    <nav class="wap-nav">
+      <ul>
+        <li class="wap-nav--item">
+          <a class="wap-nav--link" href="#">
+            teste
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="animal">
-            
-      <svg width="150" height="250" viewBox="487 593 62 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="snoop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(487.000000, 593.000000)">
-            <g id="body" transform="translate(1.000000, 82.000000)">
-                <g id="foots" transform="translate(5.000000, 18.000000)" fill="#F7F0EF">
-                    <path d="M12.899,0.517 C5.266,0.517 0.607,4.227 0.607,14.85 L24.908,14.85 L24.871,0.517 L12.899,0.517" id="left-foot"></path>
-                    <path d="M36.934,0.517 L24.962,0.517 C24.962,0.517 24.962,0.517 24.925,14.85 L49.226,14.85 C49.226,4.227 44.567,0.517 36.934,0.517" id="rigth-foot"></path>
-                </g>
-                <path d="M0.575,5.682 C0.575,5.682 9.909,11.85 15.242,11.85 C20.574,11.85 15.241,18.689 15.241,18.689 C15.241,18.689 4.908,17.182 0.575,5.682" id="tail" fill="#F7F0EF"></path>
-                <path d="M46.205,0.017 L29.89,6.676 L13.575,0.017 C13.575,0.017 6.251,32.813 29.872,32.848 L29.872,32.85 L29.89,32.849 L29.908,32.85 L29.908,32.848 C53.529,32.813 46.205,0.017 46.205,0.017" fill="#FFFFFF"></path>
-            </g>
-            <g id="head">
-                <g id="rigth-ear" transform="translate(38.000000, 0.000000)">
-                    <path d="M0.075,22.296 L0.075,22.296 C3.907,16.683 19.908,0.683 19.908,0.683 C19.908,0.683 9.166,15.685 7.735,24.888 C5.069,23.628 2.403,22.818 0.075,22.296" id="external-part" fill="#FFFFFF"></path>
-                    <path d="M21.582,41.967 C19.65,32.809 13.715,27.715 7.735,24.888 C9.166,15.685 19.908,0.683 19.908,0.683 C26.468,7.9 21.734,40.914 21.582,41.967" id="internal-part" fill="#EC9CAF"></path>
-                </g>
-                <g id="left-ear">
-                    <path d="M23.892,22.296 L23.892,22.296 C20.06,16.683 4.059,0.683 4.059,0.683 C4.059,0.683 14.801,15.685 16.231,24.888 C18.897,23.628 21.563,22.818 23.892,22.296" id="external-part" fill="#FFFFFF"></path>
-                    <path d="M2.385,41.967 C4.316,32.809 10.251,27.715 16.231,24.888 C14.801,15.685 4.059,0.683 4.059,0.683 C-2.502,7.9 2.232,40.914 2.385,41.967" id="internal-part" fill="#EC9CAF"></path>
-                </g>
-                <path d="M1.575,48.516 C1.575,75.516 24.575,93.349 30.908,93.349 C37.242,93.349 60.242,75.516 60.242,48.516 C60.242,21.516 30.908,21.349 30.908,21.349 C30.908,21.349 1.575,21.516 1.575,48.516 Z" fill="#FFFFFF"></path>
-                <g id="left-eye-group" transform="translate(10.000000, 39.000000)"></g>
-                <path d="M29.113,48.516 C29.113,53.6 24.992,57.721 19.908,57.721 C14.825,57.721 10.704,53.6 10.704,48.516 C10.704,43.433 14.825,39.312 19.908,39.312 C24.992,39.312 29.113,43.433 29.113,48.516" id="eye-shadown" fill="#09090B"></path>
-                <path d="M30.908,93.349 C34.256,93.349 42.26,88.363 49.064,79.677 C43.679,76.708 37.493,75.015 30.909,75.015 C24.325,75.015 18.138,76.709 12.753,79.678 C19.556,88.364 27.56,93.349 30.908,93.349" id="snout" fill="#09090B"></path>
-                <g id="awake-eyes" transform="translate(17.000000, 46.000000)">
-                    <path d="M27.075,2.516 C27.075,3.621 26.179,4.516 25.075,4.516 C23.97,4.516 23.075,3.621 23.075,2.516 C23.075,1.412 23.97,0.516 25.075,0.516 C26.179,0.516 27.075,1.412 27.075,2.516" id="rigth-eye" fill="#09090B"></path>
-                    <path d="M4.908,2.516 C4.908,3.621 4.013,4.516 2.908,4.516 C1.804,4.516 0.908,3.621 0.908,2.516 C0.908,1.412 1.804,0.516 2.908,0.516 C4.013,0.516 4.908,1.412 4.908,2.516" id="left-eye" fill="#FFFFFF"></path>
-                </g>
-                <g id="sleepy-eyes" opacity="0" transform="translate(18.000000, 49.000000)">
-                    <path d="M23.9956803,0.402667864 C23.1922246,0.402667864 22,-0.212970563 22,0.0782097744 C22,1.14309786 22.8898488,2 23.9956803,2 C25.1015119,2 26,1.14309786 26,0.0782097744 C26,-0.212970563 24.8077754,0.402667864 23.9956803,0.402667864" id="Fill-239" fill="#09090B"></path>
-                    <path d="M1.99568035,0.402667864 C1.19222462,0.402667864 0,-0.212970563 0,0.0782097744 C0,1.14309786 0.889848812,2 1.99568035,2 C3.10151188,2 4,1.14309786 4,0.0782097744 C4,-0.212970563 2.80777538,0.402667864 1.99568035,0.402667864" id="Fill-239" fill="#FFFFFF"></path>
-                </g>
-            </g>
-        </g>
-      </svg>
-      <div class="shadown"></div>
-    </div>
-   
-    <div id="dog-floor" class="stage--floor">
-      <div class="stone1 floor--stones">
-        <div class="layer"></div>
-      </div>
-      <div class="stone2 floor--stones">
-        <div class="layer"></div>
-      </div>
-      <div class="stone3 floor--stones">
-        <div class="layer"></div>
-      </div>
-    </div>
-  </section>
+    <section class="wap-gallery">
+      <article class="wap-gallery--item">
+        <div class="wap-gallery--item-showcase">
+          <img src="" alt="">
+        </div>
 
+        <div class="wap-gallery--item-descripition">
+          <h3 class="wap-gallery--item-title">Animation tile</h3>
+          <p class="wap-gallery--item-desc">description...</p>
+          <span class="wap-gallery--item-date">29/11/1993</span>
+        </div>
+      </article>
+    </section>
+  </div>
 </body>
 </html>
-
-<script src="./js/AnimationsKeyframes.js"> </script>
-<script src="./js/snoop.js"> </script>
