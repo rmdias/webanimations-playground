@@ -4,12 +4,193 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web Animations Playground ❤</title>
+  <title>Web Animations Playground ❤️</title>  
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 </head>
 <body>
-  
+  <header class="wap-header">
+    <h1 class="wap-logo">// WebAnimationsPlayground</h1>
+    <p class="wap-header--text">
+      Hey, this is made with ❤️ by  <a href="https://www.behance.net/mmarcc">Marcos Antônio</a> and <a href="https://github.com/rmdias">Rodolfo Dias</a>, and supported by the community :)
+    </p>
+  </header>
+
+  <div class="wap-main">
+    <section class="wap-gallery">
+      <article class="wap-gallery--item">
+        <div class="wap-gallery--item-showcase">
+          <img src="./snoop.png" alt="">
+          <div class="wap-gallery--item-showcase-links">
+            <a class="item-showcase-link codepen-link" href="https://codepen.io/rmdias/pen/rpNpwB"></a>
+          </div>
+        </div>
+
+        <div class="wap-gallery--item-desc-box">
+          <h3 class="wap-gallery--item-title">Snoop, the dog</h3>
+          <span class="wap-gallery--item-date">9th December 2017</span>
+        </div>
+      </article>
+    
+    </section>
+  </div>
 </body>
 </html>
-<script>
-  window.location.replace('https://codepen.io/rmdias/');
-</script>
+
+<style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: #FDFDFD;
+    color: #4A4A4A;
+    font-size: 12px;
+  }
+
+  .wap-header {
+    background-color: #fff;
+    width: 100%;
+    height: 58px;
+    padding: 0 15px;
+    border-bottom: 1px solid #F5F6FA;
+  }  
+
+  .wap-logo {
+    display: inline-block;
+    padding: 20px 0;
+    text-transform: lowercase;
+    letter-spacing: 2.23px;
+    cursor: pointer;
+    font-size: 14px;    
+  }
+
+  .wap-header--text {
+    padding: 20px 0;
+    float: right;
+    color: #ddd;
+    letter-spacing: 1.66px;    
+  }
+
+  .wap-header--text a {
+    color: #ddd;
+    padding-bottom: 20px;
+    transition: all ease .25s;
+  }  
+
+  .wap-header--text a:hover {
+    color: #CC2B39;
+  }  
+
+  .wap-main {
+    height: calc(100% - 58px);
+  }
+
+  .wap-gallery {
+    width: 100% ;
+    float: left;
+    padding: 50px 15px;
+  }
+
+  .wap-gallery--item {
+    width: 270px;
+    height: 230px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 15px 30px 15px;
+    border-radius: 25px 25px;
+    -webkit-box-shadow: 0 0 6px 0 #E7E7E7;
+    box-shadow: 0 0 6px 0 #E7E7E7;
+  }
+
+  .wap-gallery--item-showcase {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .wap-gallery--item-showcase img {
+    width: 100%;
+    transition: all ease .25s;
+  }
+
+  .wap-gallery--item:hover .wap-gallery--item-showcase img {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  .wap-gallery--item-showcase-links {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    transition: all ease .25s;    
+    opacity: 0;    
+  }
+  
+  .wap-gallery--item:hover .wap-gallery--item-showcase-links {
+    opacity: 1;
+    transition-delay: .10s;
+  }
+
+  .item-showcase-link {
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    transform: translateY(10px);
+    transition: all ease .25s;    
+
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0, 0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, 0.12);
+  }
+
+  .wap-gallery--item:hover .item-showcase-link {
+    transform: translateY(0);
+    transition-delay: .10s;
+  }
+  
+  .codepen-link {
+    background: #fff url('./ico-codepen.svg') center center no-repeat;
+  }
+
+  .wap-gallery--item-desc-box {
+    height: 70px;
+    padding: 15px;
+    background: #fff;
+    transition: all ease .25s;    
+  }
+
+  .wap-gallery--item:hover .wap-gallery--item-desc-box {
+    color: #fff;
+    background: #444D67;
+  }
+  
+
+  .wap-gallery--item-title {
+    padding-bottom: 5px;
+  }
+
+  .wap-gallery--item-date {
+    font-size: 10px;
+    color: #9B9B9B;
+    transition: all ease .25s;    
+  }
+
+  .wap-gallery--item:hover .wap-gallery--item-date {
+    color: #fff;
+  }
+  
+
+</style>
