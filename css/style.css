@@ -55,6 +55,7 @@ body {
   width: 100% ;
   float: left;
   padding: 50px 15px;
+  text-align: center;
 }
 
 .wap-gallery--item {
@@ -62,6 +63,7 @@ body {
   height: 230px;
   overflow: hidden;
   display: inline-block;
+  text-align: left;
   margin: 0 15px 30px 15px;
   border-radius: 25px 25px;
   -webkit-box-shadow: 0 0 6px 0 #E7E7E7;
@@ -77,14 +79,16 @@ body {
 }
 
 .wap-gallery--item-showcase img {
-  width: 100%;
+  width: 110%;
   transition: all ease .25s;
+  transform: translate(-5%, -10%);
 }
 
 .wap-gallery--item:hover .wap-gallery--item-showcase img {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   filter: blur(5px);
+  transform: translate(-5%, -10%) scale(1.2);
 }
 
 .wap-gallery--item-showcase-links {
@@ -151,4 +155,42 @@ body {
 
 .wap-gallery--item:hover .wap-gallery--item-date {
   color: #fff;
+}
+
+.github-corner {
+  transform: rotate(90deg);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+.github-corner svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ffffff;
+  fill: #1AD3FF;
+  z-index: 3;
+}
+.github-corner .octo {
+  fill: #fff;
+}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave .56s;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%,
+    60% {
+    transform: rotate(-20deg);
+  }
+  40%,
+    80% {
+    transform: rotate(10deg);
+  }
 }
