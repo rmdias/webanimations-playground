@@ -39,7 +39,6 @@ body {
 
 .wap-header--text a {
   color: #ddd;
-  padding-bottom: 20px;
   transition: all ease .25s;
 }  
 
@@ -68,6 +67,8 @@ body {
   border-radius: 25px 25px;
   -webkit-box-shadow: 0 0 6px 0 #E7E7E7;
   box-shadow: 0 0 6px 0 #E7E7E7;
+  transform: scale(1.1);
+  
 }
 
 .wap-gallery--item-showcase {
@@ -132,16 +133,16 @@ body {
 
 .wap-gallery--item-desc-box {
   height: 70px;
-  padding: 15px;
+  padding: 20px 15px 0 15px;
   background: #fff;
-  transition: all ease .25s;    
+  transition: all ease .25s; 
+  position: relative;   
 }
 
 .wap-gallery--item:hover .wap-gallery--item-desc-box {
   color: #fff;
   background: #444D67;
 }
-
 
 .wap-gallery--item-title {
   padding-bottom: 5px;
@@ -157,6 +158,25 @@ body {
   color: #fff;
 }
 
+.wap-gallery--user-info {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  text-align: center;
+  font-size: 10px;
+  text-decoration: none;;
+  color: #9B9B9B;
+}
+.wap-gallery--item:hover .wap-gallery--user-info {
+  color: #fff;
+}
+
+.wap-gallery--user-info img {
+  width: 30px;
+  border-radius: 100%;
+}
+
+
 .github-corner {
   transform: rotate(90deg);
   display: block;
@@ -164,7 +184,6 @@ body {
   bottom: 0;
   right: 0;
 }
-
 
 .github-corner svg {
   position: absolute;
