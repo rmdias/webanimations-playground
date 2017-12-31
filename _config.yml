@@ -1,0 +1,27 @@
+# Site settings
+title: Web Animations Playground ❤️
+description: A open source gallery where you can find cool animations made with the Web Animations API
+baseurl: "/"
+url: "https://rmdias.github.io/webanimations-playground/"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']

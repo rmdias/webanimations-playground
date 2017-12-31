@@ -19,7 +19,7 @@ body {
   height: 58px;
   padding: 0 15px;
   border-bottom: 1px solid #F5F6FA;
-}  
+}
 
 .wap-logo {
   display: inline-block;
@@ -27,24 +27,24 @@ body {
   text-transform: lowercase;
   letter-spacing: 2.23px;
   cursor: pointer;
-  font-size: 14px;    
+  font-size: 14px;
 }
 
 .wap-header--text {
   padding: 20px 0;
   float: right;
   color: #ddd;
-  letter-spacing: 1.66px;    
+  letter-spacing: 1.66px;
 }
 
 .wap-header--text a {
   color: #ddd;
   transition: all ease .25s;
-}  
+}
 
 .wap-header--text a:hover {
   color: #CC2B39;
-}  
+}
 
 .wap-main {
   height: calc(100% - 58px);
@@ -63,12 +63,10 @@ body {
   overflow: hidden;
   display: inline-block;
   text-align: left;
-  margin: 0 15px 30px 15px;
+  margin: 0 8px 30px 8px;
   border-radius: 25px 25px;
   -webkit-box-shadow: 0 0 6px 0 #E7E7E7;
   box-shadow: 0 0 6px 0 #E7E7E7;
-  transform: scale(1.1);
-  
 }
 
 .wap-gallery--item-showcase {
@@ -99,8 +97,8 @@ body {
   left: 0;
   position: absolute;
   text-align: center;
-  transition: all ease .25s;    
-  opacity: 0;    
+  transition: all ease .25s;
+  opacity: 0;
 }
 
 .wap-gallery--item:hover .wap-gallery--item-showcase-links {
@@ -116,7 +114,7 @@ body {
   border-radius: 100%;
   display: inline-block;
   transform: translateY(10px);
-  transition: all ease .25s;    
+  transition: all ease .25s;
 
   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0, 0.12);
   box-shadow: 0 2px 4px 0 rgba(0,0,0, 0.12);
@@ -135,8 +133,8 @@ body {
   height: 70px;
   padding: 20px 15px 0 15px;
   background: #fff;
-  transition: all ease .25s; 
-  position: relative;   
+  transition: all ease .25s;
+  position: relative;
 }
 
 .wap-gallery--item:hover .wap-gallery--item-desc-box {
@@ -151,7 +149,7 @@ body {
 .wap-gallery--item-date {
   font-size: 10px;
   color: #9B9B9B;
-  transition: all ease .25s;    
+  transition: all ease .25s;
 }
 
 .wap-gallery--item:hover .wap-gallery--item-date {
