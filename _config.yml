@@ -1,6 +1,6 @@
 # Site settings
 title: Web Animations Playground ❤️
-description: A open source gallery where you can find cool animations made with the Web Animations API
+description: An open source gallery where you can find cool animations made with the Web Animations API
 baseurl: "/webanimations-playground"
 url: "https://rmdias.github.io/webanimations-playground/"
 
