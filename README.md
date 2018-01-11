@@ -11,7 +11,7 @@ git checkout -b add/<project-name>
 
 Then create a new file at `_posts` and add a preview image at `assets/img/previews` following the pattern:
 
-file name: `yyyy-mm-dd-<project-name>`
+file name: `yyyy-mm-dd-<project-name>.md`
 file sctruture:
 ```
 ---
